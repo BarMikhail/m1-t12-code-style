@@ -5,7 +5,11 @@ public class DepositCalculator {
     public static void main(String[] args) {
         new DepositCalculator().calculate();
     }
-
+    /*
+    В параметрах метода calculateComplexPercentFunction использовал бы такие же имена как
+    и у метода calculateSimplePercentFunction.
+    Как понял они берут одни и теже значения.
+     */
     double calculateComplexPercentFunction(double a, double y, int d) {
        double pay = a * Math.pow((1 + y / 12), 12 * d);
        return round(pay, 2);
